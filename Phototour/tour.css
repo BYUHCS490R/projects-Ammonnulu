@@ -1,0 +1,14 @@
+nav a {
+    color: blue;
+}
+
+.current {
+    color: black;
+    text-decoration: wavy;
+}
+body {
+    background-color: lightgray;
+}
+.homepage {
+    background-color: violet;
+}
