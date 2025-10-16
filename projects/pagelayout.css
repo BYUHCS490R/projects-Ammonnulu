@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: maroon;
+    margin: 0;
+}
+
+#wrapper {
+    width: 850px;
+    background-color: rgb(252, 166, 6);
+    margin: auto;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+header {
+    background-color: #f4d68e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #5c0000;
+    background-image: url(Kashmir.jpg);
+    background-origin: border-box;
+    background-clip: content-box;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #5c0000;
+    text-shadow: 2px 2px 3px #f0e0b0;
+    margin: 0;
+}
+
+nav {
+    background-color: #5c0000;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+nav a {
+    display: inline-block;
+    color: #e2a413;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    background-color: #a62c2b;
+    color: white;
+    border-radius: 3px;
+}
+
+.section-title {
+    background-color: #ffcc66;
+    padding: 10px;
+    border-left: 6px solid #5c0000;
+    font-size: 20px;
+    width: fit-content;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.Kashmir {
+    float: left;
+    width: 300px;
+    margin: 10px 20px 10px 0;
+    border: 2px solid #5c0000;
+    background-color: rgb(252, 166, 6);
+    text-align: center;
+}
+
+.Kashmir img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #5c0000;
+}
+
+.Kashmir figcaption {
+    font-style: italic;
+    color: #5c0000;
+    font-size: 14px;
+    padding: 5px;
+}
+
+main {
+    padding: 150px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #140c00;
+    font-size: 17px;
+}
+
+footer {
+    background-color: rgb(252, 166, 6);
+    color: maroon;
+    text-align: bottom;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 0 0 10px 10px;
+}
