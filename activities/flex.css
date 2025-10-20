@@ -10,9 +10,33 @@ body {
     width: 250px;
 }
 
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: cadetblue;
+    color: azure;
+    text-decoration: none;
+}
+
+nav a :hover {
+    color: cadetblue;
+    background-color: azure;
+    text-decoration: underline;
+}
+
 .row {
     display: flex;
     /*flex-direction: row;
     flex-wrap: wrap;*/
     justify-content: space-evenly;
+}
+
+.mainthing {
+    order: -1;
 }
