@@ -105,9 +105,3 @@ footer {
         width: 100%;
     }
 }
-
-@media print {
-    nav, header {
-        display: none;    
-    }
-}
