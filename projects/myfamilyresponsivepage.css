@@ -58,13 +58,11 @@ main {
     flex: 3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: flex;
 }
 
 article {
     background-color: white;
     padding: 30px;
-    box-shadow: gray;
     text-align: center;
 }
 
