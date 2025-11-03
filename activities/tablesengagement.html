@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
+    <link rel="stylesheet" href="tableengagement.css">
 </head>
 <body>
     <header>
@@ -11,7 +12,8 @@
     </header>
     <main>
         <h1>Tables</h1>
-        <table border="1">
+        <table class="schedule">
+            <caption>My Class Schedule</caption>
             <thead>
                 <tr>
                     <td>Department</td>
@@ -22,7 +24,7 @@
                     <td>Credits</td>
                 </tr>
                 <tr>
-                    <td colspan="6"> Fall 2025</td>
+                    <th colspan="6">Fall 2025</th>
                 </tr>
             </thead>
             <tbody>
@@ -56,7 +58,7 @@
                     <td>Stake Center</td>
                     <td>2</td>
                 </tr>
-                <tr>
+                <tr class="grayish">
                     <td>COMM</td>
                     <td>305</td>
                     <td>Pop Culture & Disney</td>
@@ -78,12 +80,10 @@
                 </tr>
             </tbody>
         </table>
-        <h3>When do you use a table?</h3>
-        <p>Use a table when you want to show information or numbers in a clear way using rows and columns, like marks, prices, or timetables.</p>
-        <h3>When do you not use a table?</h3>
-        <p>Do not use a table if you are only listing few points or using it just to arrange text or pictures.</p>
-        <h3>When do you need to do extra work for table accessibility?</h3>
-        <p>Do extra work when your table has many headers or mixed cells, so that screen readers can read it properly for all users.</p>
+        <h3>Why don't we use the border attribute?</h3>
+        <p>We do not use the border attribute because it is an old HTML method. It is better to use CSS for styling the table, as it gives more control and looks cleaner.</p>
+        <h3>What is the easiest way to color every other row a different color?</h3>
+        <p>We can use the :nth-child() selector in CSS. It will automatically color every second row.</p>
     </main>
     <footer>
         <p>&copy; 2025 Ammon Nulu</p>
