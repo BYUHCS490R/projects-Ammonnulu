@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: lightgrey;
+}
+
+header {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+nav {
+    background-color: darkgray;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: lightslategray;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+main {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.movies {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.movies caption {
+    caption-side: bottom;
+    font-style: italic;
+    padding: 10px;
+}
+
+.movies th, .movies td {
+    border: 1px solid lightblue;
+    padding: 10px;
+    text-align: left;
+}
+
+.movies thead {
+    background-color: blueviolet;
+    color: white;
+}
+
+.movies tbody tr:nth-child(even) {
+    background-color: lightcyan;
+}
+
+.movies tbody tr:nth-child(odd) {
+    background-color: cadetblue;
+}
+
+footer {
+    margin-top: 10px;
+}
