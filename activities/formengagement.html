@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="formengagement.css">
+</head>
+<body>
+    <header>
+        <h1>Ammon's Web Design Site</h1>
+    </header>
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">
+            <div>
+                <label for="Full Name">Full Name:</label>
+                <input type="Full Name" name="fname" id="full-name">
+            </div>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="Email" name="Email" id="Email">
+            </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="Pasword" name="pass" id="pass">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank">---</option>
+                    <option value="CA">Califonia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <label><input type="checkbox" name="agree">I agree to the terms.</label>
+            </div>
+            <div>
+                gender:
+                <label><input type="radio" name="Gender" value="male">Male</label>
+                <label><input type="radio" name="Gender" value="male">Female</label>
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+           <input type="submit" value="Sign Up">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ammon Nulu</p>
+    </footer>
+</body>
+</html>
