@@ -11,8 +11,8 @@
         <h1>Ammon's Web Design Site</h1>
     </header>
     <main>
-        <h1>Forms</h1>
-        <form action="formprocess.html" method="post">
+            <h1>Forms</h1>
+        <form action="formprocess.html" method="post" id="myform">
             <fieldset>
                 <div class="form-row">
                     <label for="fname">Full Name:</label>
@@ -53,8 +53,46 @@
            </fieldset>
         </form>
     </main>
+    <h3>What is JavaScript? How did it get its name?</h3>
+        <p>JavaScript is a language that makes websites interactive, and it got its name because Netscape used the popular “Java” name for marketing.</p>
+        <h3>What are the two ways you can run JavaScript?</h3>
+        <p>You can run JavaScript in a web browser or on a server using Node.js.</p>
+        <h3>What was the most popular front-end js library?</h3>
+        <p>Earlier, the most popular front-end JavaScript library was jQuery.</p>
+        <h3>What is the most popular front-end js library today?</h3>
+        <p>Today, the most popular front-end JavaScript library is React.</p>
     <footer>
         <p>&copy; 2025 Ammon Nulu</p>
     </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit',function(event) {
+            event.preventDefault();
+            alert("Form Submitted");
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+
+            if (!fullname || !email) {
+                alert("You need a name and email.");
+                return;
+            }
+
+            if (!age || !age) {
+                alert("You need to be 18");
+                return;
+            }
+
+            const formdData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            }
+
+            console.log(FormData);
+        });
+    </script>
 </body>
 </html>
