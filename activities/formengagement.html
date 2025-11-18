@@ -65,7 +65,7 @@
         <p>&copy; 2025 Ammon Nulu</p>
     </footer>
     <script>
-        document.getElementById('myform').addEventListener('submit',function(event) {
+        document.getElementById('myform').addEventListener('submit', function(event) {
             event.preventDefault();
             alert("Form Submitted");
 
@@ -78,20 +78,35 @@
                 alert("You need a name and email.");
                 return;
             }
-
-            if (!age || !age) {
-                alert("You need to be 18");
+            if (!age || age < 18) {
+                alert("You need to be 18.");
                 return;
             }
-
-            const formdData = {
+            const formData = {
                 name: fullname,
                 email: email,
                 password: password,
                 age: age
-            }
+            };
+            console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "submit.json", true); 
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
-            console.log(FormData);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert("Form submitted successfully!");
+                    const response = JSON.parse(xhr.responseText);
+                    console.log(response);
+
+                    document.getElementById('myform').innerHTML = '';
+                    document.getElementById('message').innerText = response.message;
+                
+                } else if (xhr.readyState === 4 && xhr.status !== 200) {
+                    alert("Error submitting form.");
+                }
+            };
+            xhr.send(JSON.stringify(formData));
         });
     </script>
 </body>
