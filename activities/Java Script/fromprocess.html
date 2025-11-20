@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Processing Project</title>
+    <link rel="stylesheet" href="formprocess.css">
+</head>
+<body>
+    <header>
+        <h1>Ammon's Web Design</h1>
+    </header>
+    <main>
+        <div id="message"></div>
+        <form action="fromprocess.html" method="get" id="myForm">
+            <fieldset>
+                <legend>Account Info</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fname" id="fullname" placeholder="Full Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="text" name="age" id="age" placeholder="Age">
+                </div>
+
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">-----</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="CA" selected>California</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer">Year in School.</div>
+                    <label><input type="radio" name="year" value="freshman"> Freshman</label>
+                    <label><input type="radio" name="year" value="sophomore"> Sophomore</label>
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="remember"> Remember Me</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2025 Ammon Nulu</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
