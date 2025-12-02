@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="finalupdate.css">
+</head>
+<body>
+    <header>
+        <h1>South Indian Food Culture</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dosaidli.html">Dosa & Idli</a></li>
+                <li><a href="biriyani.html">Biryani</a></li>
+                <li><a href="chaicoffee.html">Chai & Coffee</a></li>
+                <li><a href="spices.html">Spices</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="dish">Favourite Dish:</label>
+            <input type="text" id="dish">
+
+            <label for="suggestion">Recipe Suggestion:</label>
+            <textarea id="suggestion" rows="4"></textarea>
+
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" min="1" max="5">
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="successMessage" style="display:none; color:blue; font-weight:bold;">Thank you! Your form has been submitted successfully.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ammon Nulu</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
