@@ -70,39 +70,38 @@ footer {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
 }
 
 label, input, textarea, button {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 button {
-  background-color: #ff9800;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #e68900;
+    background-color: #e68900;
 }
 
-
 @media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-  }
+    nav ul {
+        flex-direction: column;
+    }
 
-  nav li {
-    margin-bottom: 10px;
-  }
+    nav li {
+        margin-bottom: 10px;
+    }
 
-  nav a {
-    font-size: 18px;
-    padding: 10px;
-  }
+    nav a {
+        font-size: 18px;
+        padding: 10px;
+    }
 }
